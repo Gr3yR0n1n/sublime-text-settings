@@ -1,0 +1,19 @@
+{
+	"extensions":
+	[
+		"zsh-theme",
+		".zshrc",
+		"sh",
+		".aliases",
+		".gitignore",
+		"symlink",
+		".vimrc",
+		".gitconfig",
+		".exports",
+		".gitignore_global",
+		".path",
+		".functions",
+		"conf",
+		".htaccess"
+	]
+}

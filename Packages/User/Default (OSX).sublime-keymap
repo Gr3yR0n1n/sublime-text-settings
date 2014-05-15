@@ -1,0 +1,25 @@
+[
+{ "keys": ["super+escape"], "command": "toggle_side_bar" },
+{ "keys": ["super+shift+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+{ "keys": ["ctrl+shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
+{ "keys": ["ctrl+shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
+{
+        "keys": [
+            "ctrl+alt+super+enter"
+        ],
+        "command": "expand_as_you_type",
+        "context": [
+            {
+                "operand": false,
+                "operator": "equal",
+                "match_all": true,
+                "key": "setting.is_widget"
+            },
+            {
+                "match_all": true,
+                "key": "emmet_action_enabled.expand_as_you_type"
+            }
+
+        ]
+    }
+]

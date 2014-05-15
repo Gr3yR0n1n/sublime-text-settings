@@ -1,0 +1,94 @@
+[{
+    "id": "side-bar-files-open-with",
+    "children": [
+
+        //Images and PDFs
+        {
+            "caption": "Photoshop",
+            "id": "side-bar-files-open-with-photoshop",
+
+            "command": "side_bar_files_open_with",
+            "args": {
+                "paths": [],
+                "application": "Adobe Photoshop CC.app", // OSX
+                "extensions": "psd|png|jpg|jpeg|bmp|gif" //any file with these extensions
+            }
+        }, {
+            "caption": "Acrobat Pro",
+            "id": "side-bar-files-open-with-acrobat-pro",
+
+            "command": "side_bar_files_open_with",
+            "args": {
+                "paths": [],
+                "application": "Adobe Acrobat Pro.app", // OSX
+                "extensions": "pdf" //any file with these extensions
+            }
+        }, {
+            "caption": "Preview",
+            "id": "side-bar-files-open-with-preview",
+
+            "command": "side_bar_files_open_with",
+            "args": {
+                "paths": [],
+                "application": "Preview.app", // OSX
+                "extensions": "pdf|png|jpg|jpeg|bmp|gif" //any file with these extensions
+            }
+        },
+        //separator
+        {
+            "caption": "-"
+        },
+
+        //other editors
+        {
+            "caption": "Mou",
+            "id": "side-bar-files-open-with-mou",
+
+            "command": "side_bar_files_open_with",
+            "args": {
+                "paths": [],
+                "application": "Mou.app",
+                "extensions": "md|markdown|mdown|mark|mdml|text|txt|mdtext|mdml|mdtxt|mdwn|mkd|mkdn" //open all even folders
+            }
+        },
+        //separator
+        {
+            "caption": "-"
+        },
+
+        //browsers
+        {
+            "caption": "Chrome",
+            "id": "side-bar-files-open-with-chrome",
+
+            "command": "side_bar_files_open_with",
+            "args": {
+                "paths": [],
+                "application": "Google Chrome.app",
+                "extensions": ".*" //any file with extension
+            }
+        }, {
+            "caption": "Safari",
+            "id": "side-bar-files-open-with-safari",
+
+            "command": "side_bar_files_open_with",
+            "args": {
+                "paths": [],
+                "application": "Safari.app",
+                "extensions": ".*" //any file with extension
+            }
+        }, {
+            "caption": "Firefox",
+            "id": "side-bar-files-open-with-firefox",
+
+            "command": "side_bar_files_open_with",
+            "args": {
+                "paths": [],
+                "application": "Firefox.app",
+                "extensions": ".*" //any file with extension
+            }
+        }, {
+            "caption": "-"
+        }
+    ]
+}]
