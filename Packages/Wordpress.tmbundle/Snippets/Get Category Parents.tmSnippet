@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php echo(get_category_parents(${1:category}, ${2:display link}, ${3:separator}, ${4:nice name})); ?&gt;</string>
+	<key>name</key>
+	<string>Get Category Parents</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>catparents</string>
+	<key>uuid</key>
+	<string>21327E33-8CC9-418C-9FC3-B21311B73FD7</string>
+</dict>
+</plist>

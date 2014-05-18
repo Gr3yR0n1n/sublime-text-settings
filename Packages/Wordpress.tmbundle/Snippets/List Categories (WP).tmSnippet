@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php wp_list_cats('$1'); ?&gt;$0</string>
+	<key>name</key>
+	<string>List Categories (WP)</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>listcats</string>
+	<key>uuid</key>
+	<string>83458466-2B61-42C2-A4E7-40078B4419EE</string>
+</dict>
+</plist>

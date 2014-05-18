@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/escape'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+
+items = [
+	{ 'title' =&gt; 'ID',						      'insert' =&gt; %^comment_ID(); ^},
+	{ 'title' =&gt; 'Author',						  'insert' =&gt; %^comment_author(); ^},
+	{ 'title' =&gt; 'Content',					    'insert' =&gt; %^comment_text(); ^},
+	{ 'title' =&gt; 'Date',					      'insert' =&gt; %^comment_date('${1:F jS, Y}'); ^},
+	{ 'title' =&gt; 'Time',					      'insert' =&gt; %^comment_time(); ^},
+	{ 'title' =&gt; 'Edit', 					      'insert' =&gt; %^edit_comment_link('${1:edit}','${2:&amp;nbsp;&amp;nbsp;}','$3'); ^},
+	{ 'title' =&gt; 'Author Link',				  'insert' =&gt; %^comment_author_link(); ^},
+	{ 'title' =&gt; 'Author URL',				  'insert' =&gt; %^comment_author_url(); ^},
+	{ 'title' =&gt; 'Author IP',				    'insert' =&gt; %^comment_author_IP(); ^},
+	{ 'title' =&gt; 'Author E-mail',		    'insert' =&gt; %^comment_author_email(); ^},
+	{ 'title' =&gt; 'Awaiting Moderation',	'insert' =&gt; %^if (\\$comment-&gt;comment_approved == '0') { echo '&lt;em&gt;Your comment is awaiting moderation.&lt;/em&gt;'; }^},
+]
+
+if res = TextMate::UI.menu(items)
+  scope = ENV['TM_SCOPE']
+  if scope.include? 'source.php' 
+    print res['insert']
+  else
+    print "&lt;?php " + res['insert'] + "?&gt;"
+  end
+end</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Comment:</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>comment</string>
+	<key>uuid</key>
+	<string>A0391CC5-8CF6-469D-9D3F-B773B885EAB5</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>add_filter('${1:hook}','${2:callback-function}',${3:10},${4:1});</string>
+	<key>name</key>
+	<string>Filter</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>wpfilt</string>
+	<key>uuid</key>
+	<string>360E7ED6-2E2B-45F8-8B5B-3A1893481858</string>
+</dict>
+</plist>

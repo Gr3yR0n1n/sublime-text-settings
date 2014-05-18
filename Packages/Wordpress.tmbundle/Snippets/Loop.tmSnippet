@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php if (have_posts()) : ?&gt;
+
+	&lt;?php while (have_posts()) : the_post(); ?&gt;
+
+		&lt;?php // Individual Post Styling ?&gt;
+
+	&lt;?php endwhile; ?&gt;
+
+		&lt;?php // Navigation ?&gt;
+
+	&lt;?php else : ?&gt;
+
+		&lt;?php // No Posts Found ?&gt;
+
+&lt;?php endif; ?&gt;</string>
+	<key>name</key>
+	<string>Loop</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>loop</string>
+	<key>uuid</key>
+	<string>8DBB6564-8B39-4BD3-9FAD-8738E92FE8A1</string>
+</dict>
+</plist>

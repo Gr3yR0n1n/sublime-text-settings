@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+require ENV['TM_SUPPORT_PATH'] + '/lib/escape'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+
+items = [
+	 { 'title' =&gt; 'comment_ID' ,            'insert' =&gt; 'comment_ID' },
+	 { 'title' =&gt; 'comment_post_ID' ,       'insert' =&gt; 'comment_post_ID' },
+	 { 'title' =&gt; 'comment_approved' ,      'insert' =&gt; 'comment_approved' },
+	 { 'title' =&gt; 'comment_author' ,        'insert' =&gt; 'comment_author' },
+	 { 'title' =&gt; 'comment_author_email' ,  'insert' =&gt; 'comment_author_email' },
+	 { 'title' =&gt; 'comment_author_url' ,    'insert' =&gt; 'comment_author_url' },
+	 { 'title' =&gt; 'comment_author_IP' ,     'insert' =&gt; 'comment_author_IP' },
+	 { 'title' =&gt; 'user_id' ,               'insert' =&gt; 'user_id' },
+	 { 'title' =&gt; 'comment_date' ,          'insert' =&gt; 'comment_date' },
+	 { 'title' =&gt; 'comment_date_gmt' ,      'insert' =&gt; 'comment_date_gmt' },
+	 { 'title' =&gt; 'comment_content' ,       'insert' =&gt; 'comment_content' },
+	 { 'title' =&gt; 'comment_karma' ,         'insert' =&gt; 'comment_karma' },
+	 { 'title' =&gt; 'comment_agent' ,         'insert' =&gt; 'comment_agent' },
+	 { 'title' =&gt; 'comment_type' ,          'insert' =&gt; 'comment_type' },
+	 { 'title' =&gt; 'comment_parent' ,        'insert' =&gt; 'comment_parent' },
+	 { 'title' =&gt; 'comment_subscribe' ,     'insert' =&gt; 'comment_subscribe' },
+]
+if res = TextMate::UI.menu(items)
+  scope = ENV['TM_SCOPE']
+  if scope.include? 'source.php' 
+    print '\$comment-&gt;' + res['insert']
+  else
+    print '&lt;?php echo \$comment-&gt;' + res['insert'] + "; ?&gt;"
+  end
+end</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Comment-&gt;Member Variable</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>$comment</string>
+	<key>uuid</key>
+	<string>BC1C830C-BE80-48C1-8EC5-632574FFCCE1</string>
+</dict>
+</plist>

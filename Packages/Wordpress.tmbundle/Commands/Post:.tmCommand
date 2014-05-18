@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/escape'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+
+items = [
+  { 'title' =&gt; 'ID' , 'insert' =&gt; %^the_ID(); ^},
+  { 'title' =&gt; 'Content' , 'insert' =&gt; %^${1:get_}the_content(${2:"Continue reading " . the_title('', '', false)}); ^},
+  { 'title' =&gt; 'Excerpt' , 'insert' =&gt; %^${1:get_}the_excerpt(); ^},
+  { 'title' =&gt; 'Permalink' , 'insert' =&gt; %^the_permalink(); ^},
+  { 'title' =&gt; 'Get Permalink' , 'insert' =&gt; %^get_permalink() ^},
+  { 'title' =&gt; 'Edit Post Link' , 'insert' =&gt; %^edit_post_link('${1:Edit this page}', '${2:&lt;small&gt;}', '${3:&lt;/small&gt;}'); ^},
+  { 'title' =&gt; 'Title' , 'insert' =&gt; %^${1:get_}the_title(${2:'&lt;${3:h3}&gt;', '&lt;/${3/\s.*//}&gt;', ${4:TRUE}}); ^},
+  { 'title' =&gt; 'Title RSS' , 'insert' =&gt; %^the_title_rss(); ^},
+  { 'title' =&gt; 'Date' , 'insert' =&gt; %^the_time('${1:F jS, Y}') ^},
+  { 'title' =&gt; 'Meta' , 'insert' =&gt; %^the_meta(); ^},
+  { 'title' =&gt; 'Author' , 'insert' =&gt; %^the_author() ^},
+  { 'title' =&gt; 'Category' , 'insert' =&gt; %^the_category('${1:, }') ^},
+  { 'title' =&gt; 'Comments' , 'insert' =&gt; %^comments_popup_link('${1:No Comments &amp;#187;}', '${2:1 Comment &amp;#187;}', '${3:% Comments &amp;#187;}'); ^},
+  { 'title' =&gt; 'Content RSS' , 'insert' =&gt; %^the_content_rss('${1:${2:More...}', ${3:strip_teaser}, '${4:more_file}', ${5:50}, ${6:encode_html}}); ^},
+  { 'title' =&gt; 'Excerpt RSS' , 'insert' =&gt; %^the_excerpt_rss(); ^}
+]
+
+if res = TextMate::UI.menu(items)
+  scope = ENV['TM_SCOPE']
+  if scope.include? 'source.php' 
+    print res['insert']
+  else
+    print "&lt;?php " + res['insert'] + "?&gt;"
+  end
+end</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Post:</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>post</string>
+	<key>uuid</key>
+	<string>FC2DA322-EC05-4C23-BEF3-213CB242E0D2</string>
+</dict>
+</plist>

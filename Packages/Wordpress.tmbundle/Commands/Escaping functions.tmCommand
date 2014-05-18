@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+require ENV['TM_SUPPORT_PATH'] + '/lib/escape'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+
+items = [
+  { 'title' =&gt; 'attr',      'insert' =&gt; %^esc_attr(${1:}); ^},
+  { 'title' =&gt; 'attr echo', 'insert' =&gt; %^esc_attr_e(${1:}); ^},
+  { 'title' =&gt; 'html',      'insert' =&gt; %^esc_html(${1:}); ^},
+  { 'title' =&gt; 'html echo', 'insert' =&gt; %^esc_html_e(${1:}); ^},
+  { 'title' =&gt; 'sql',       'insert' =&gt; %^esc_sql(${1:}); ^},
+  { 'title' =&gt; 'url',       'insert' =&gt; %^esc_url(${1:}); ^},
+  { 'title' =&gt; 'url_raw',   'insert' =&gt; %^esc_url_raw(${1:}); ^},
+  { 'title' =&gt; 'js',        'insert' =&gt; %^esc_js(${1:}); ^},
+]
+
+if res = TextMate::UI.menu(items)
+  scope = ENV['TM_SCOPE']
+  if scope.include? 'source.php' 
+    print res['insert']
+  else
+    print "&lt;?php " + res['insert'] + "?&gt;"
+  end
+end</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Escaping functions</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>esc</string>
+	<key>uuid</key>
+	<string>88215760-9E45-420F-A9D7-20F14711C220</string>
+</dict>
+</plist>

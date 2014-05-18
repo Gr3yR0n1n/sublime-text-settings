@@ -1,11 +1,11 @@
 {
 	"installed_packages":
 	[
+		"AdvancedNewFile",
 		"Alignment",
 		"All Autocomplete",
 		"ApplySyntax",
 		"Autoprefixer",
-		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"Colorcoder",
@@ -14,13 +14,13 @@
 		"DashDoc",
 		"Emmet",
 		"Enlightened Color Scheme",
-		"Foundation 5 Snippets",
 		"Git",
 		"GitGutter",
-		"Grandson-of-Obsidian",
 		"HTML5",
+		"Nettuts+ Fetch",
 		"Node Completions",
 		"SCSS",
+		"SFTP",
 		"SideBarEnhancements",
 		"Stylus",
 		"SublimeCodeIntel",
@@ -29,12 +29,10 @@
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-csslint",
 		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
 		"SublimeLinter-phplint",
-		"SublimeLinter-rubocop",
-		"SublimeLinter-ruby",
 		"Sublimerge Pro",
 		"Syntax Highlighting for Sass",
-		"Theme - Soda",
 		"Theme - Spacegray"
 	]
 }

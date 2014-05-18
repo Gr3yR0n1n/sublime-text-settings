@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php list_cats(${1:optionall}, '${2:all}', '${3:sort_column}','${4:sort_order}', '${5:file}', ${6:list}, ${7:optiondates}, ${8:optioncount}, ${9:hide_empty}, ${10:use_desc_for_title}, ${11:children}, ${12:child_of}, '${13:Categories}', ${14:recurse}, '${15:feed}', '${16:feed_img}', '${17:exclude}', ${18:hierarchical}); ?&gt;$0</string>
+	<key>name</key>
+	<string>List Categories (Full Options)</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>listcats</string>
+	<key>uuid</key>
+	<string>CFC6A8E5-2F04-45C3-A71B-6737749B65B6</string>
+</dict>
+</plist>
