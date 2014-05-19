@@ -33,14 +33,14 @@
 		"*.class",
 		"*.pdf",
 		".tags",
-		".gemtags"
+		".gemtags",
+		".gitignore"
 	],
 	"folder_exclude_patterns":
 	[
 		"*.sass-cache",
 		"*.rbx",
-		".git",
-		".gitignore"
+		".git"
 	],
 	"font_face": "Inconsolata-dz for Powerline",
 	"font_options": "subpixel_antialias",
