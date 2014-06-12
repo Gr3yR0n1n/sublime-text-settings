@@ -155,6 +155,7 @@ def get_view_rc_settings(view, limit=None):
         return None
 
 
+@lru_cache(maxsize=None)
 def get_rc_settings(start_dir, limit=None):
     """
     Search for a file named .sublimelinterrc starting in start_dir.
@@ -167,7 +168,7 @@ def get_rc_settings(start_dir, limit=None):
     """
 
     if not start_dir:
-        return
+        return None
 
     path = find_file(start_dir, '.sublimelinterrc', limit=limit)
 
@@ -1266,8 +1267,8 @@ def apply_to_all_views(callback):
 
 # misc utils
 
-def clear_caches():
-    """Clear the caches of all methods in this module that use an lru_cache."""
+def clear_path_caches():
+    """Clear the caches of all path-related methods in this module that use an lru_cache."""
     create_environment.cache_clear()
     which.cache_clear()
     find_python.cache_clear()
