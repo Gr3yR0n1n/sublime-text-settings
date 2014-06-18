@@ -1,19 +1,26 @@
 {
+	"apply_syntax_extensions":
+	[
+		"bash",
+		"zsh"
+	],
 	"extensions":
 	[
-		"zsh-theme",
-		".zshrc",
-		"sh",
-		".aliases",
 		".gitignore",
-		"symlink",
-		".vimrc",
-		".gitconfig",
-		".exports",
+		"sh",
 		".gitignore_global",
+		"bash",
+		".exports",
+		".zshrc",
 		".path",
 		".functions",
+		".gitconfig",
+		"zsh",
 		"conf",
-		".htaccess"
+		"zsh-theme",
+		".htaccess",
+		".vimrc",
+		".aliases",
+		"symlink"
 	]
 }
