@@ -5,7 +5,7 @@
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/User/enlightened (SL).tmTheme",
+	"color_scheme": "Packages/Colorcoder/base16-atelierlakeside.dark (SL) (Colorcode).tmTheme",
 	"create_window_at_startup": false,
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -43,17 +43,16 @@
 	],
 	"font_face": "Inconsolata-dz for Powerline",
 	"font_options": "subpixel_antialias",
-	"font_size": 12,
+	"font_size": 13,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Colorcoder",
-		"Vintage",
-		"Markdown"
+		"Markdown",
+		"Vintage"
 	],
 	"indent_to_bracket": true,
-	"original_color_scheme": "Packages/User/enlightened (SL).tmTheme",
+	"original_color_scheme": "Packages/User/base16-atelierlakeside.dark (SL).tmTheme",
 	"scroll_past_end": true,
 	"scroll_speed": 1.5,
 	"theme": "Spacegray.sublime-theme",
