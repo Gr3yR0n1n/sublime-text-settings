@@ -5,7 +5,7 @@
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/Colorcoder/enlightened (SL) (Colorcode) (Colorcode).tmTheme",
+	"color_scheme": "Packages/User/Color Highlighter/themes/base16-atelierlakeside.dark (SL) (Colorcode).tmTheme",
 	"create_window_at_startup": false,
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
