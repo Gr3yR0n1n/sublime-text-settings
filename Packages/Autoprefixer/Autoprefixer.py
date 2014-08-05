@@ -16,7 +16,6 @@ BIN_PATH = join(sublime.packages_path(), dirname(realpath(__file__)), 'autoprefi
 
 class AutoprefixerCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
-		self.browsers = ','.join(self.get_setting('browsers'))
 		if not self.has_selection():
 			region = sublime.Region(0, self.view.size())
 			originalBuffer = self.view.substr(region)
@@ -34,7 +33,10 @@ class AutoprefixerCommand(sublime_plugin.TextCommand):
 
 	def prefix(self, data):
 		try:
-			return node_bridge(data, BIN_PATH, [self.browsers])
+			return node_bridge(data, BIN_PATH, [json.dumps({
+				'browsers': self.get_setting('browsers'),
+				'cascade': self.get_setting('cascade')
+			})])
 		except Exception as e:
 			sublime.error_message('Autoprefixer\n%s' % e)
 
