@@ -1,5 +1,6 @@
 import sublime
 import sublime_plugin
+import json
 from os.path import dirname, realpath, join
 
 try:
