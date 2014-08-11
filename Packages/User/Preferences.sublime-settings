@@ -5,7 +5,7 @@
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
 	"caret_style": "smooth",
-	"color_scheme": "Packages/User/base16-atelierlakeside.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/enlightened (SL).tmTheme",
 	"create_window_at_startup": false,
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -48,8 +48,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Colorcoder",
 		"Vintage",
+		"Colorcoder",
 		"Markdown"
 	],
 	"indent_to_bracket": true,
