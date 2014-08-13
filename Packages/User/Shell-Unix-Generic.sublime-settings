@@ -21,6 +21,7 @@
 		".htaccess",
 		".vimrc",
 		".aliases",
-		"symlink"
+		"symlink",
+		"config"
 	]
 }
