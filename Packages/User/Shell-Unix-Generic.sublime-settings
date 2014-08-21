@@ -22,6 +22,7 @@
 		".vimrc",
 		".aliases",
 		"symlink",
-		"config"
+		"config",
+		"hosts"
 	]
 }
