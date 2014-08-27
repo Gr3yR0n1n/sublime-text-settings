@@ -14,11 +14,13 @@
 		"CSS3_Syntax",
 		"Dark Neon Color Scheme",
 		"DashDoc",
+		"DocBlockr",
 		"Emmet",
 		"Enlightened Color Scheme",
 		"Git",
 		"GitGutter",
 		"HTML5",
+		"LESS",
 		"Nettuts+ Fetch",
 		"Node Completions",
 		"Polymer & Web Component Snippets",
@@ -36,6 +38,7 @@
 		"SublimeLinter-php",
 		"SublimeLinter-phplint",
 		"Sublimerge Pro",
+		"SyncedSideBar",
 		"Syntax Highlighting for Sass",
 		"Theme - Spacegray"
 	]
