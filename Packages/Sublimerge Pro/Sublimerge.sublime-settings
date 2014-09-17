@@ -114,7 +114,7 @@
         "scroll_past_end": false,
 
         //set to false if you don't want to highlight corresponding lines
-        "highlight_line": false,
+        "highlight_line": true,
 
         //set to 'all' to display white space characters always, 'selection' to display
         //only when selection is applied
