@@ -124,6 +124,17 @@
         "save_on_focus_lost": false
     },
 
+    //Defines if summary panel should be displayed. This panel shows differences between
+    //adjacent lines or currently selected blocks.
+    "summary_panel": true,
+
+    //Some Sublime themes makes the panel to blend with the diff views. If this is uncomfortable
+    //to read, you can fix it by changing the following setting to point to a valid tmTheme file.
+    //The idea behind this is to separate the panel visually by changing its background color.
+    //
+    //Example: "summary_panel_color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme"
+    "summary_panel_color_scheme": null,
+
     //Starts diff view in swapped mode where new changes are displayed on the left-hand side panel.
     "start_swapped": false,
 

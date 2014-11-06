@@ -1,16 +1,18 @@
 {
 	"installed_packages":
 	[
-		"AdvancedNewFile",
 		"Alignment",
 		"All Autocomplete",
 		"AngularJS",
 		"ApplySyntax",
 		"Autoprefixer",
 		"Base16 Color Schemes",
+		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"Colorcoder",
+		"ColorPicker",
+		"CSS3",
 		"CSS3_Syntax",
 		"Dark Neon Color Scheme",
 		"DashDoc",
@@ -19,6 +21,7 @@
 		"Enlightened Color Scheme",
 		"Git",
 		"GitGutter",
+		"Gutter Color",
 		"HTML-CSS-JS Prettify",
 		"HTML5",
 		"LESS",
@@ -26,6 +29,7 @@
 		"Node Completions",
 		"Polymer & Web Component Snippets",
 		"SCSS",
+		"Seti_UI",
 		"SFTP",
 		"SideBarEnhancements",
 		"Stylus",
@@ -41,6 +45,9 @@
 		"Sublimerge Pro",
 		"SyncedSideBar",
 		"Syntax Highlighting for Sass",
+		"Theme - Cobalt2",
+		"Theme - RDM",
+		"Theme - Soda SolarizedDark",
 		"Theme - Spacegray"
 	]
 }

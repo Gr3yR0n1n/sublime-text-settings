@@ -1,4 +1,4 @@
 {
 
-    "file_exts": [".coffee", ".json", ".xml", ".php"]
+    "file_exts": [".css", ".sass", ".scss", ".less", ".styl", ".html", ".js", ".sublime-settings", ".tmTheme", ".erb", ".haml", ".json", ".xml", ".php", ".coffee"]
 }

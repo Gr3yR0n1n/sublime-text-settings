@@ -10,20 +10,10 @@
             "command": "side_bar_files_open_with",
             "args": {
                 "paths": [],
-                "application": "Adobe Photoshop CC.app", // OSX
+                "application": "Adobe Photoshop CC 2014.app", // OSX
                 "extensions": "psd|png|jpg|jpeg|bmp|gif" //any file with these extensions
             }
-        }, {
-            "caption": "Acrobat Pro",
-            "id": "side-bar-files-open-with-acrobat-pro",
-
-            "command": "side_bar_files_open_with",
-            "args": {
-                "paths": [],
-                "application": "Adobe Acrobat Pro.app", // OSX
-                "extensions": "pdf" //any file with these extensions
-            }
-        }, {
+        },{
             "caption": "Preview",
             "id": "side-bar-files-open-with-preview",
 
