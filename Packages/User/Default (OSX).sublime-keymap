@@ -1,29 +1,13 @@
 [
-{ "keys": ["super+escape"], "command": "toggle_side_bar" },
-{ "keys": ["super+shift+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
-{ "keys": ["ctrl+shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
-{ "keys": ["ctrl+shift+alt+n"], "command": "side_bar_new_file" },
-{ "keys": ["ctrl+shift+alt+d"], "command": "side_bar_new_directory" },
-{ "keys": ["ctrl+shift+alt+r"], "command": "side_bar_rename" },
-{ "keys": ["ctrl+shift+alt+m"], "command": "side_bar_move" },
-{ "keys": ["ctrl+shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
-{
-        "keys": [
-            "ctrl+alt+super+enter"
-        ],
-        "command": "expand_as_you_type",
-        "context": [
-            {
-                "operand": false,
-                "operator": "equal",
-                "match_all": true,
-                "key": "setting.is_widget"
-            },
-            {
-                "match_all": true,
-                "key": "emmet_action_enabled.expand_as_you_type"
-            }
-
-        ]
-    }
+    { "keys": ["super+`"], "command": "toggle_side_bar" },
+    { "keys": ["super+shift+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    { "keys": ["ctrl+shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+shift+alt+n"], "command": "side_bar_new_file" },
+    { "keys": ["ctrl+shift+alt+d"], "command": "side_bar_new_directory" },
+    { "keys": ["ctrl+shift+alt+r"], "command": "side_bar_rename" },
+    { "keys": ["ctrl+shift+alt+m"], "command": "side_bar_move" },
+    { "keys": ["ctrl+shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
+    { "keys": ["super+ctrl+t"], "command": "open_terminal" },
+    { "keys": ["super+shift+escape+t"], "command": "open_terminal_project_folder" },
+    {"keys": ["ctrl+alt+super+enter"],"command": "expand_as_you_type","context": [{"operand": false,"operator": "equal","match_all": true,"key": "setting.is_widget"},{"match_all": true,"key": "emmet_action_enabled.expand_as_you_type"}]}
 ]
