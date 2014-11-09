@@ -1,7 +1,6 @@
 {
 	"user":
 	{
-		"@disable": true,
 		"debug": false,
 		"delay": 0.25,
 		"error_color": "D02000",
@@ -55,7 +54,28 @@
 				[
 				]
 			},
+			"json":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
+				"strict": true
+			},
 			"jsxhint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"php":
 			{
 				"@disable": false,
 				"args":
