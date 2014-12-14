@@ -31,13 +31,13 @@
 
         //other editors
         {
-            "caption": "Mou",
-            "id": "side-bar-files-open-with-mou",
+            "caption": "Macdown",
+            "id": "side-bar-files-open-with-macdown",
 
             "command": "side_bar_files_open_with",
             "args": {
                 "paths": [],
-                "application": "Mou.app",
+                "application": "Macdown.app",
                 "extensions": "md|markdown|mdown|mark|mdml|text|txt|mdtext|mdml|mdtxt|mdwn|mkd|mkdn" //open all even folders
             }
         },

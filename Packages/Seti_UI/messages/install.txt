@@ -9,13 +9,22 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 {
   "theme": "Seti.sublime-theme",
   "color_scheme": "Packages/Seti_UI/Scheme/Seti.tmTheme",
-  "caret_extra_width": 2 // to have a wider/thicker caret
+
+  "caret_extra_width": 2,                 //  to have a wider/thicker caret
+  "line_padding_bottom": 2,               //  should be at least = 2 to align properly with the fold icon
+  "line_padding_top": 2,
+  "margin": 2,
+
+  "overlay_scroll_bars": "enabled",       //  to show scrollbars only when scrolling
+  "highlight_line": true,                 //  to highlight the current line
 }
 ```
 
+- please check the readme for more theme options.
+
 - copy the (fold.png) "or edit it if you want" to (Packages/Theme - Default) to override the _focken default yellow icon.
 
-- for better recognition of files types, its recommended to install [Apply​Syntax](https://sublime.wbond.net/packages/ApplySyntax) by facelessuser.
+- for better recognition of file types, its recommended to install [Apply​Syntax](https://sublime.wbond.net/packages/ApplySyntax) by facelessuser.
 
 
 ## Folder Contents
@@ -26,5 +35,3 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
   |-Ext         > copy the content of this folder to your 'Packages/User' folder so (Extensions/Files) can recognize their correct language/icons.
 
   |-File_Types  > are for testing the icons with, if you don't need it you can simply remove it.
-
-  |-Not_Working > are icon setting files for some files which i don't currently have any '?-syntax.tmlanguage' for, so again if you don't need any of them you can remove it as well.
