@@ -1,12 +1,18 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"Alignment",
 		"All Autocomplete",
-		"AngularJS",
 		"ApplySyntax",
 		"Autoprefixer",
-		"Base16 Color Schemes",
 		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
 		"Color Highlighter",
@@ -24,8 +30,8 @@
 		"HTML-CSS-JS Prettify",
 		"HTML5",
 		"LESS",
-		"Nettuts+ Fetch",
 		"Node Completions",
+		"Package Control",
 		"Polymer & Web Component Snippets",
 		"SCSS",
 		"Seti_UI",
@@ -33,7 +39,6 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"Stylus",
-		"sublime-github",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-contrib-scss-lint",
@@ -44,12 +49,6 @@
 		"SublimeLinter-php",
 		"SublimeLinter-phplint",
 		"SyncedSideBar",
-		"Syntax Highlighting for Sass",
-		"Terminal",
-		"Theme - Cobalt2",
-		"Theme - RDM",
-		"Theme - Soda SolarizedDark",
-		"Theme - Spacegray",
-		"Vintageous"
+		"Syntax Highlighting for Sass"
 	]
 }
