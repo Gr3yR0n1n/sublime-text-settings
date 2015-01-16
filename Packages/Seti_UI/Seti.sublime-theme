@@ -220,7 +220,7 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Seti_UI/Main/fold-closed.png",
+        "layer0.texture": "Seti_UI/Main/fold-closed@2x.png",
         "layer0.opacity": 0.45,
         "layer0.inner_margin": 0,
         "content_margin": 8
@@ -233,7 +233,7 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Seti_UI/Main/fold-open.png"
+        "layer0.texture": "Seti_UI/Main/fold-open@2x.png"
     },
     {
         "class": "fold_button_control",
@@ -427,8 +427,8 @@
     },
     {
         "class": "progress_gauge_control",
-        "layer0.tint": [52, 152, 219],
         "layer0.opacity": 1,
+        "layer0.tint": [110, 29, 186],
         "content_margin": [0, 6]
     },
 
@@ -677,6 +677,24 @@
         "layer0.tint": [200, 200, 200],
         "layer0.opacity": 1
     },
+     // options
+    {
+        "class": "disclosure_button_control",
+        "settings": ["Seti_sb_wild"],
+        "layer0.opacity": 0 // hide sidebar arrows
+    },
+    {
+        "class": "sidebar_tree",
+        "settings": ["Seti_sb_wild"],
+        "indent": 15,
+        "row_padding": [3,6],
+        "indent_offset": 2,
+    },
+    {
+        "class": "sidebar_container",
+        "settings": ["Seti_sb_wild"],
+        "content_margin": [0,7,0,0]
+    },
 
     // Sidebar group open
     {
@@ -688,7 +706,7 @@
     // Sidebar folder closed
     {
         "class": "icon_folder",
-        "layer0.texture": "Seti_UI/icons/folder@2x.png",
+        "layer0.texture": "Seti_UI/Main/folder@2x.png",
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "content_margin": [7,0]
@@ -698,7 +716,7 @@
     {
         "class": "icon_folder",
         "settings": ["Seti_ClosedFolder_same"],
-        "layer0.texture": "Seti_UI/icons/folder_open@2x.png",
+        "layer0.texture": "Seti_UI/Main/folder_open@2x.png",
         "layer0.opacity": 0.5,
     },
     {
@@ -709,42 +727,16 @@
     {
         "class": "icon_folder",
         "settings": ["Seti_ClosedFolder_dots"],
-        "layer0.texture": "Seti_UI/icons/folder-dots@2x.png",
+        "layer0.texture": "Seti_UI/Main/xyz/folder-dots@2x.png",
     },
     // Sidebar folder opened
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"]}],
-        "layer0.texture": "Seti_UI/icons/folder_open@2x.png",
+        "layer0.texture": "Seti_UI/Main/folder_open@2x.png",
         "layer0.inner_margin": -5,
         "layer0.opacity": 1,
         "content_margin": [7,0],
-    },
-
-    //========================================================
-    //  ICONS (build 3062+)
-    //--------------------------------------------------------
-    {
-        "class": "icon_file_type",
-        // layer0.texture is filled in by code with the relevant icon name
-        "layer0.tint": [255, 255, 255],
-        "layer0.opacity": 1,
-        "content_margin": 8
-    },
-    {
-        "class": "icon_file_type",
-        "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "layer0.opacity": 1
-    },
-    {
-        "class": "icon_file_type",
-        "parents": [{"class": "tree_row","attributes": ["selected"]}],
-        "layer0.opacity": 1
-    },
-    {
-        "class": "icon_file_type",
-        "parents": [{"class": "tree_row","attributes": ["selected", "hover"]}],
-        "layer0.opacity": 1
     },
 
     // Icon folder loading
@@ -780,7 +772,7 @@
         "layer0.opacity": 1,
         "layer0.tint": [69,90,100],
         "min_size": [75,0],
-        "content_margin": [5,11] // the search panel right side buttons height
+        "content_margin": [5,6] // the search panel right side buttons height
     },
     // Hover button state
     {
@@ -804,14 +796,14 @@
         "class": "text_line_control",
         "layer0.tint": [21,23,24], // is the same color of BG in widget file
         "layer0.opacity": 1,
-        "content_margin": [3,3,5,3] // control the search panel height , line padding also effects this
+        "content_margin": [3,1,5,0] // control the search panel height , line padding also effects this
     },
+    // options @ BOTTOM PANEL BUTTONS
     // Text input dropdown
     {
         "class": "dropdown_button_control",
-        "content_margin": 8,
+        "content_margin": 7,
         "layer0.texture": "Seti_UI/Main/text-field-list.png",
-        "layer0.tint": [212, 212, 213],
         "layer0.opacity": 1
     },
     {
@@ -844,7 +836,7 @@
         "class": "overlay_control",
         "settings": ["Seti_rainbow"],
         "layer1.opacity": 0,
-        "layer0.texture": "Seti_UI/Main/quick_bar1.png",
+        "layer0.texture": "Seti_UI/Main/xyz/quick_bar.png",
         "layer0.opacity": 1
     },
 
@@ -854,7 +846,7 @@
 
     {
         "class": "quick_panel",
-        "row_padding": [10,14],
+        "row_padding": [10,8],
         "layer0.tint": [16,17,18],
         "layer0.opacity": 1
     },
@@ -925,7 +917,7 @@
     },
     {
         "class": "auto_complete",
-        "row_padding": [5,10]
+        "row_padding": [3,2]
     },
     {
         "class": "auto_complete_label",
@@ -953,8 +945,86 @@
     {
         "class": "icon_button_control",
         "layer0.opacity": 0,
+        "content_margin": [6,5]
+    },
+    // options
+    // 5
+    {
+        "class": "text_line_control",
+        "settings": ["Seti_pad_5"],
+        "content_margin": [3,2,5,2]
+    },
+    {
+        "class": "button_control",
+        "settings": ["Seti_pad_5"],
+        "content_margin": [5,11]
+    },
+    {
+        "class": "icon_button_control",
+        "settings": ["Seti_pad_5"],
         "content_margin": [6,10]
     },
+    {
+        "class": "quick_panel",
+        "settings": ["Seti_pad_5"],
+        "row_padding": [10,14,10,13],
+    },
+    {
+        "class": "auto_complete",
+        "settings": ["Seti_pad_5"],
+        "row_padding": [5,8]
+    },
+    {
+        "class": "fold_button_control",
+        "settings": ["Seti_pad_5"],
+        "layer0.texture": "Seti_UI/Main/xyz/fold-closed-5@2x.png",
+    },
+    {
+        "class": "fold_button_control",
+        "settings": ["Seti_pad_5"],
+        "attributes": ["expanded"],
+        "layer0.texture": "Seti_UI/Main/xyz/fold-open-5@2x.png",
+    },
+    // 3
+    {
+        "class": "text_line_control",
+        "settings": ["Seti_pad_3"],
+        "content_margin": [3,1,5,0]
+    },
+    {
+        "class": "button_control",
+        "settings": ["Seti_pad_3"],
+        "content_margin": [5,9]
+    },
+    {
+        "class": "icon_button_control",
+        "settings": ["Seti_pad_3"],
+        "content_margin": [6,8]
+    },
+    {
+        "class": "quick_panel",
+        "settings": ["Seti_pad_3"],
+        "row_padding": [10,12,10,11],
+    },
+    {
+        "class": "auto_complete",
+        "settings": ["Seti_pad_3"],
+        "row_padding": [5,5]
+    },
+    {
+        "class": "fold_button_control",
+        "settings": ["Seti_pad_3"],
+        "layer0.texture": "Seti_UI/Main/xyz/fold-closed-3@2x.png",
+    },
+    {
+        "class": "fold_button_control",
+        "settings": ["Seti_pad_3"],
+        "attributes": ["expanded"],
+        "layer0.texture": "Seti_UI/Main/xyz/fold-open-3@2x.png",
+    },
+    //
+
+
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
@@ -996,7 +1066,7 @@
     // Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Seti_UI/Main/regex.png",
+        "layer0.texture": "Seti_UI/Main/regex@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1014,7 +1084,7 @@
     // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Seti_UI/Main/casesens.png",
+        "layer0.texture": "Seti_UI/Main/casesens@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1032,7 +1102,7 @@
     // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Seti_UI/Main/wholeword.png",
+        "layer0.texture": "Seti_UI/Main/wholeword@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1055,7 +1125,7 @@
     // Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Seti_UI/Main/context.png",
+        "layer0.texture": "Seti_UI/Main/context@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1073,7 +1143,7 @@
     // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Seti_UI/Main/buffer.png",
+        "layer0.texture": "Seti_UI/Main/buffer@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1096,7 +1166,7 @@
     // Reverse search direction button (ST2 only)
     {
         "class": "icon_reverse",
-        "layer0.texture": "Seti_UI/Main/reverse.png",
+        "layer0.texture": "Seti_UI/Main/reverse@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1114,7 +1184,7 @@
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Seti_UI/Main/wrap.png",
+        "layer0.texture": "Seti_UI/Main/wrap@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1132,7 +1202,7 @@
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Seti_UI/Main/selection.png",
+        "layer0.texture": "Seti_UI/Main/selection@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1155,7 +1225,7 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Seti_UI/Main/casesens.png",
+        "layer0.texture": "Seti_UI/Main/casesens@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8
@@ -1178,7 +1248,7 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Seti_UI/Main/highlight.png",
+        "layer0.texture": "Seti_UI/Main/highlight@2x.png",
         "layer0.tint": [96,125,139],
         "layer0.opacity": 1,
         "content_margin": 8

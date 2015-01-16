@@ -10,8 +10,10 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"AlignTab",
 		"All Autocomplete",
 		"ApplySyntax",
+		"AutoFileName",
 		"Autoprefixer",
 		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
@@ -25,12 +27,17 @@
 		"DocBlockr",
 		"Emmet",
 		"Enlightened Color Scheme",
+		"Gist",
 		"GitGutter",
 		"Gutter Color",
 		"HTML-CSS-JS Prettify",
 		"HTML5",
+		"Inc-Dec-Value",
+		"jQuery",
 		"LESS",
+		"Modific",
 		"Node Completions",
+		"Origami",
 		"Package Control",
 		"Polymer & Web Component Snippets",
 		"SCSS",
@@ -49,6 +56,8 @@
 		"SublimeLinter-php",
 		"SublimeLinter-phplint",
 		"SyncedSideBar",
-		"Syntax Highlighting for Sass"
+		"Syntax Highlighting for Sass",
+		"Theme - Brogrammer",
+		"WordPress"
 	]
 }
