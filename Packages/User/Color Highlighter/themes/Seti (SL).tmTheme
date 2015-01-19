@@ -3,22 +3,22 @@
 <plist version="1.0">
     <dict>
         <key>name</key>
-        <string>Seti</string>
+        <string>Seti_Mod</string>
         <key>settings</key>
         <array>
 <dict>
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_0090D0FF</string>
+<string>mcol_FFFFFFFF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#0090D0FF</string>
+<string>#FFFFFFFF</string>
 <key>caret</key>
-<string>#2FBFFFFF</string>
+<string>#000000FF</string>
 <key>foreground</key>
-<string>#2FBFFFFF</string>
+<string>#000000FF</string>
 </dict>
 </dict>
 
@@ -27,15 +27,168 @@
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_0090D0FF</string>
+<string>mcol_383838FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#0090D0FF</string>
+<string>#383838FF</string>
 <key>caret</key>
-<string>#2FBFFFFF</string>
+<string>#C7C7C7FF</string>
 <key>foreground</key>
-<string>#2FBFFFFF</string>
+<string>#C7C7C7FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_444444FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#444444FF</string>
+<key>caret</key>
+<string>#BBBBBBFF</string>
+<key>foreground</key>
+<string>#BBBBBBFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_DDDDDDFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#DDDDDDFF</string>
+<key>caret</key>
+<string>#212121FF</string>
+<key>foreground</key>
+<string>#212121FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_0000FFFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#0000FFFF</string>
+<key>caret</key>
+<string>#00004CFF</string>
+<key>foreground</key>
+<string>#00004CFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_EBEBEBFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#EBEBEBFF</string>
+<key>caret</key>
+<string>#141414FF</string>
+<key>foreground</key>
+<string>#141414FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_222222FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#222222FF</string>
+<key>caret</key>
+<string>#DDDDDDFF</string>
+<key>foreground</key>
+<string>#DDDDDDFF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_595959FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#595959FF</string>
+<key>caret</key>
+<string>#A6A6A6FF</string>
+<key>foreground</key>
+<string>#A6A6A6FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_2F2F2FFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#2F2F2FFF</string>
+<key>caret</key>
+<string>#D0D0D0FF</string>
+<key>foreground</key>
+<string>#D0D0D0FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_363636FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#363636FF</string>
+<key>caret</key>
+<string>#C9C9C9FF</string>
+<key>foreground</key>
+<string>#C9C9C9FF</string>
+</dict>
+</dict>
+
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_0000001E</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#0000001E</string>
+<key>caret</key>
+<string>#FFFFFFFF</string>
+<key>foreground</key>
+<string>#FFFFFFFF</string>
 </dict>
 </dict>
 
@@ -63,7 +216,8 @@
                     <key>gutter</key>
                     <string>#0D1011</string>
                     <key>gutterForeground</key>
-                    <string>#2B3337</string>
+                    <string>#d4d7d670</string>
+                    
 
                     <key>selection</key>
                     <string>#4FA5C7</string>
@@ -107,7 +261,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#41535b</string>
+                    <string>#4a5f68</string>
                 </dict>
             </dict>
 
@@ -930,6 +1084,17 @@
                 </dict>
             </dict>
 
+            
+            <dict>
+                <key>scope</key>
+                <string>source.php.embedded.block.html, punctuation.definition.array.begin.php, punctuation.definition.array.end.php, punctuation.definition.parameters.begin.php, punctuation.definition.parameters.end.php</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#d4d7d6</string>
+                </dict>
+            </dict>
+
 
             <dict>
                 <key>name</key>
@@ -1550,7 +1715,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#06FF05</string>
+                    <string>#9FCA56</string>
                 </dict>
             </dict>
 
@@ -1562,10 +1727,140 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#FFFF00</string>
+                    <string>#cd3f45</string>
                 </dict>
             </dict>
 
+
+        <dict>
+            <key>name</key>
+            <string>main</string>
+            <key>scope</key>
+            <string>source.diff</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#d4d7d6</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>diff.header from</string>
+            <key>scope</key>
+            <string>meta.diff.header.from-file, meta.diff.header.from-file punctuation.definition.from-file.diff</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#41535b</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>diff.header to</string>
+            <key>scope</key>
+            <string>meta.diff.header.to-file, meta.diff.header.to-file punctuation.definition.to-file.diff</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#41535b</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>diff.deleted</string>
+            <key>scope</key>
+            <string>markup.deleted.diff, markup.deleted.diff punctuation.definition.inserted.diff</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#cd3f45</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>diff.inserted</string>
+            <key>scope</key>
+            <string>markup.inserted.diff, punctuation.definition.inserted.diff</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#9FCA56</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>name</key>
+            <string>range</string>
+            <key>scope</key>
+            <string>meta.diff.range.unified, meta.diff.range.unified meta.toc-list.line-number.diff, meta.diff.range.unified punctuation.definition.range.diff</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
+                <key>foreground</key>
+                <string>#A074C4</string>
+            </dict>
+        </dict>
+
+            <dict>
+              <key>name</key>
+              <string>GitGutter deleted</string>
+              <key>scope</key>
+              <string>markup.deleted.git_gutter</string>
+              <key>settings</key>
+              <dict>
+                <key>foreground</key>
+                <string>#F92672</string>
+              </dict>
+            </dict>
+            <dict>
+              <key>name</key>
+              <string>GitGutter inserted</string>
+              <key>scope</key>
+              <string>markup.inserted.git_gutter</string>
+              <key>settings</key>
+              <dict>
+                <key>foreground</key>
+                <string>#A6E22E</string>
+              </dict>
+            </dict>
+            <dict>
+              <key>name</key>
+              <string>GitGutter changed</string>
+              <key>scope</key>
+              <string>markup.changed.git_gutter</string>
+              <key>settings</key>
+              <dict>
+                <key>foreground</key>
+                <string>#967EFB</string>
+              </dict>
+            </dict>
+            <dict>
+              <key>name</key>
+              <string>GitGutter ignored</string>
+              <key>scope</key>
+              <string>markup.ignored.git_gutter</string>
+              <key>settings</key>
+              <dict>
+                <key>foreground</key>
+                <string>#565656</string>
+              </dict>
+            </dict>
+            <dict>
+              <key>name</key>
+              <string>GitGutter untracked</string>
+              <key>scope</key>
+              <string>markup.untracked.git_gutter</string>
+              <key>settings</key>
+              <dict>
+                <key>foreground</key>
+                <string>#565656</string>
+              </dict>
+            </dict>
 
             
             <dict>
@@ -1666,6 +1961,16 @@
 
         <dict>
             <key>name</key>
+            <string>SublimeLinter Warning</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.warning</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#DDB700</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
             <string>SublimeLinter Gutter Mark</string>
             <key>scope</key>
             <string>sublimelinter.gutter-mark</string>
@@ -1683,16 +1988,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#D02000</string>
-            </dict>
-        </dict><dict>
-            <key>name</key>
-            <string>SublimeLinter Warning</string>
-            <key>scope</key>
-            <string>sublimelinter.mark.warning</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#DDB700</string>
             </dict>
         </dict></array>
         <key>semanticClass</key>
