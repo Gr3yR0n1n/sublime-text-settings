@@ -9,5 +9,7 @@
     { "keys": ["ctrl+shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
     { "keys": ["super+ctrl+t"], "command": "open_terminal" },
     { "keys": ["super+shift+escape+t"], "command": "open_terminal_project_folder" },
-    {"keys": ["ctrl+alt+super+enter"],"command": "expand_as_you_type","context": [{"operand": false,"operator": "equal","match_all": true,"key": "setting.is_widget"},{"match_all": true,"key": "emmet_action_enabled.expand_as_you_type"}]}
+    {"keys": ["ctrl+alt+super+enter"],"command": "expand_as_you_type","context": [{"operand": false,"operator": "equal","match_all": true,"key": "setting.is_widget"},{"match_all": true,"key": "emmet_action_enabled.expand_as_you_type"}]},
+    { "keys": ["super+o"], "command": "fuzzy_start_from_file" },
+    { "keys": ["super+shift+o"], "command": "fuzzy_bookmarks_load" }
 ]

@@ -2,11 +2,6 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
 		"Alignment",
@@ -25,8 +20,10 @@
 		"Dark Neon Color Scheme",
 		"DashDoc",
 		"DocBlockr",
+		"Dracula Color Scheme",
 		"Emmet",
 		"Enlightened Color Scheme",
+		"FuzzyFileNav",
 		"Gist",
 		"GitGutter",
 		"Gutter Color",
@@ -40,6 +37,7 @@
 		"Origami",
 		"Package Control",
 		"Polymer & Web Component Snippets",
+		"rsub",
 		"SCSS",
 		"Seti_UI",
 		"Seti_UX",
@@ -58,6 +56,8 @@
 		"SyncedSideBar",
 		"Syntax Highlighting for Sass",
 		"Theme - Brogrammer",
-		"WordPress"
+		"Tomorrow Color Schemes",
+		"WordPress",
+		"WordpressDev"
 	]
 }
