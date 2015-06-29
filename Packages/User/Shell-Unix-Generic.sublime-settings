@@ -23,6 +23,7 @@
 		".aliases",
 		"symlink",
 		"config",
-		"hosts"
+		"hosts",
+		".extras"
 	]
 }
