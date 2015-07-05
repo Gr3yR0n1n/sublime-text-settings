@@ -24,9 +24,84 @@
 	<key>name</key>
 	<string>One Dark (Colorcoded)</string>
 	<key>semanticClass</key>
-	<string>theme.dark.base16_eighties_dark</string>
+	<string>theme.dark.one_dark</string>
 	<key>settings</key>
 	<array>
+		<dict>
+			<key>name</key>
+			<string>mon_color</string>
+			<key>scope</key>
+			<string>mcol_FFFFFFFF</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFFFFFFF</string>
+				<key>caret</key>
+				<string>#000000FF</string>
+				<key>foreground</key>
+				<string>#000000FF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>mon_color</string>
+			<key>scope</key>
+			<string>mcol_ED1D24FF</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ED1D24FF</string>
+				<key>caret</key>
+				<string>#460507FF</string>
+				<key>foreground</key>
+				<string>#460507FF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>mon_color</string>
+			<key>scope</key>
+			<string>mcol_262262FF</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#262262FF</string>
+				<key>caret</key>
+				<string>#A19DDDFF</string>
+				<key>foreground</key>
+				<string>#A19DDDFF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>mon_color</string>
+			<key>scope</key>
+			<string>mcol_F3BB2FFF</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#F3BB2FFF</string>
+				<key>caret</key>
+				<string>#483404FF</string>
+				<key>foreground</key>
+				<string>#483404FF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>mon_color</string>
+			<key>scope</key>
+			<string>mcol_F3BB2FE5</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#F3BB2FE5</string>
+				<key>caret</key>
+				<string>#483404FF</string>
+				<key>foreground</key>
+				<string>#483404FF</string>
+			</dict>
+		</dict>
 		<dict>
 			<key>settings</key>
 			<dict>
@@ -62,6 +137,8 @@
 			<string>comment, punctuation.definition.comment</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string> italic</string>
 				<key>foreground</key>
 				<string>#59626F</string>
 			</dict>
@@ -487,7 +564,7 @@
 				<key>background</key>
 				<string>#f2777a</string>
 				<key>foreground</key>
-				<string>#f2f0ec</string>
+				<string>#272B33</string>
 			</dict>
 		</dict>
 		<dict>
@@ -513,7 +590,7 @@
 				<key>background</key>
 				<string>#d27b53</string>
 				<key>foreground</key>
-				<string>#f2f0ec</string>
+				<string>#272B33</string>
 			</dict>
 		</dict>
 		<dict>
@@ -526,7 +603,84 @@
 				<key>background</key>
 				<string>#747369</string>
 				<key>foreground</key>
-				<string>#f2f0ec</string>
+				<string>#272B33</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Json key</string>
+			<key>scope</key>
+			<string>source.json                           meta.structure.dictionary.json                              string.quoted.double.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DF6A73</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Json value</string>
+			<key>scope</key>
+			<string>source.json                       meta.structure.dictionary.json                           meta.structure.dictionary.value.json                       string.quoted.double.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#90C378</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>json sub key</string>
+			<key>scope</key>
+			<string>source.json                           meta.structure.dictionary.json                          meta.structure.dictionary.value.json                        meta.structure.dictionary.json                      string.quoted.double.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DF6A73</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Json sub value</string>
+			<key>scope</key>
+			<string>source.json                       meta.structure.dictionary.json                        meta.structure.dictionary.value.json                       meta.structure.dictionary.json                          meta.structure.dictionary.value.json                            string.quoted.double.json</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#90C378</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>laravel blade tag</string>
+			<key>scope</key>
+			<string>text.html.laravel-blade                        source.php.embedded.line.html                     entity.name.tag.laravel-blade</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C679DD</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>laravel blade @</string>
+			<key>scope</key>
+			<string>text.html.laravel-blade                         source.php.embedded.line.html                    support.constant.laravel-blade</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C679DD</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Warning</string>
+			<key>scope</key>
+			<string>sublimelinter.mark.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DDB700</string>
 			</dict>
 		</dict>
 		<dict>
@@ -549,17 +703,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SublimeLinter Warning</string>
-			<key>scope</key>
-			<string>sublimelinter.mark.warning</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#DDB700</string>
 			</dict>
 		</dict>
 		<dict>
