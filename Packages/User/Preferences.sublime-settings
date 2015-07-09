@@ -48,8 +48,8 @@
 	"ignored_packages":
 	[
 		"Vintageous",
-		"Colorcoder",
-		"Vintage"
+		"Vintage",
+		"Colorcoder"
 	],
 	"indent_guide_options":
 	[
