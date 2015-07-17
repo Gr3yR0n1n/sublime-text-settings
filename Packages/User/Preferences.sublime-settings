@@ -47,9 +47,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Colorcoder",
 		"Vintageous",
-		"Vintage",
-		"Colorcoder"
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
