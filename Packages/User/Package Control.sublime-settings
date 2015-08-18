@@ -30,8 +30,10 @@
 		"GitGutter-Edge",
 		"Gutter Color",
 		"Handlebars",
+		"HTML5",
 		"Inc-Dec-Value",
 		"jQuery",
+		"JsFormat",
 		"LESS",
 		"Material Theme",
 		"Meteor Autocomplete (TernJS)",
@@ -43,6 +45,7 @@
 		"Package Control",
 		"rsub",
 		"SCSS",
+		"SCSS Snippets",
 		"SFTP",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
@@ -57,7 +60,7 @@
 		"SyncedSideBar",
 		"Syntax Highlighting for Sass",
 		"Theme - Spacegray",
-		"Themr",
-		"Vintageous"
+		"Vintageous",
+		"WordPress"
 	]
 }

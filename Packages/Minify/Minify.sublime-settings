@@ -23,6 +23,15 @@
 	// Open resulting file (minified or beautified)?
 	"open_file": true,
 
+	// Only Minify specified file types (css, js, json, html, svg) when "auto_minify_on_save" is used
+	"allowed_file_types": [
+		"css",
+		"js",
+		"json",
+		"html",
+		"svg"
+	],
+
 	// ############################
 	// #  CSS Processing Options  #
 	// ############################
@@ -85,6 +94,13 @@
 
 	// you can specify command line parameters for .html beautification
 	// "js-beautify_html_options": "--indent-size=2",
+
+	// #############################
+	// #  JSON Processing Options  #
+	// #############################
+
+	// you may want to define the minjson command with an absolute path
+	// "minjson_command": "/usr/local/bin/minjson",
 
 	// ############################
 	// #  SVG Processing Options  #

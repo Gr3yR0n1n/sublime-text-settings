@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+/*
+Theme Name: ${1:Theme Name}
+Theme URI: ${2:http://github.com/rainydaymedia/flux}
+Author: ${3:Rainy Day Media LLC}
+Author URI: ${4:http://rainydaymedia.net}
+Description: ${5:A Framework for rapidly developing HTML5 based WordPress Themes}
+Version: ${6:1.0}
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wpstyle</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.css</scope> -->
+</snippet>
