@@ -1,8 +1,8 @@
 {
 	"extensions":
 	[
-		"rails",
 		"erb",
+		"rails",
 		"html.erb"
 	]
 }
