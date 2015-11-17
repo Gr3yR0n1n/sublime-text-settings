@@ -9,7 +9,7 @@
 	"caret_extra_width": 2,
 	"caret_style": "smooth",
 	"color_inactive_tabs": true,
-	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
+	"color_scheme": "Packages/User/Color Highlighter/themes/Oceanic Next (SL).tmTheme",
 	"create_window_at_startup": false,
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -70,6 +70,9 @@
 		"draw_active"
 	],
 	"indent_to_bracket": true,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"material_theme_contrast_mode": true,
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
 	"overlay_scroll_bars": "enabled",
